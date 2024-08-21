@@ -21,7 +21,7 @@ public class AuthController {
         return tokenService.generateToken(authentication);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public String health() {
         return "Authorization Server is running.";
     }
